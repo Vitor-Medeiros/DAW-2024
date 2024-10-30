@@ -92,3 +92,24 @@ main {}
 #banner h3 {
  margin: 0;
 }
+
+#banner .banner-body1 {
+    padding: 3.75rem 0 0 2.8rem;
+    font-size: 4rem;
+    font-weight: 300;
+}
+
+#banner .banner-body2 {
+    margin-top: 1rem;
+    margin-left: 2.8rem;
+    font-weight: 500;
+    font-size: 1.4rem;
+}
+
+section h2 {
+    padding: 2rem 0;
+    font-weight: 300;
+    text-align: center;
+}
+
+#cards {}
