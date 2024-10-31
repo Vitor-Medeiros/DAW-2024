@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: Roboto, sans-serif;
 }
@@ -17,6 +22,7 @@ header .container {
     align-items: center; /* Alinha ao centro verticalmente */
 
 }
+
 header .brand {
     display: flex;
     gap: 1rem;
@@ -39,16 +45,19 @@ header nav ul {
     list-style-type: none;
     gap: 1rem;
 }
+
 header nav li a {
     font-weight: 300;
     line-height: 2rem;
 }
+
 header nav a {
     text-decoration: none;
     color: #000000;
     text-transform: uppercase;
     padding-bottom: 1rem;
 }
+
 header nav a:hover,
 header nav a.active {
     color: #0889d4;
@@ -58,6 +67,7 @@ header nav a.active {
     font-weight: 400;
     border-bottom: 2px solid #0889d4;
 }
+
 header nav button{
     background: #0889d4;
     color:#ffffff;
@@ -89,6 +99,7 @@ main {}
     height: 100%;
     background: linear-gradient(270deg,rgba(255,255,255,0), #ffffff 50%);
 }
+
 #banner h3 {
  margin: 0;
 }
@@ -106,17 +117,110 @@ main {}
     font-size: 1.4rem;
 }
 
-section>h2 {
+section {
+    margin-top: 4rem;
+}
+
+section h2 {
     padding: 2rem 0;
     font-weight: 300;
     text-align: center;
     font-size: 2.5rem;
     color: #01528a;
+    margin: 2rem 0;
 }
 
 #cards {}
 
 #cards .cards-content {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
+#cards .card {
+    width: 530px;
+    display: flex;
+    gap: 1rem;
+    box-shadow: rgb(0 0 0 / 20%) 0 2px 1px -1px,
+                rgb(0 0 0 / 14%) 0 1px 1px 0,
+                rgb(0 0 0 / 12%) 0 1px 3px 0;
+    border-radius: 0.6rem;
+    margin-bottom: 3rem;
+    padding: 1rem;
+    position: relative;
+}
+
+#cards .card img {
+    width: 160px;
+    height: 180px;
+}
+
+#cards .card h4{
+    font-weight: 400;
+    margin-bottom: 0.8rem;
+}
+
+#cards .card p {
+    font-weight: 300;
+    text-align: justify;
+    color: #8f90a6;
+    max-height: 4.5rem;
+    overflow: hidden;
+    margin-bottom: 1.3rem;
+}
+
+#cards .card-price{
+    position: absolute;
+    display: flex;
+    justify-content: end;
+    right: 1rem;
+    bottom: 1rem;
+
+}
+
+#cards .card-price p {
+    background-color: #0889d4;
+    color: #fff;
+    font-size: 1rem;
+    border-radius: 0.25rem;
+    padding: 0.5rem 1rem;
+    margin: 0;
+}
+
+#reasons{}
+
+#reasons .reasons-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+#reasons .reason {
+    border-left: 2px solid #0889d4;
+    width: 100%;
+}
+
+#reasons .reason:first-of-type{
+    border-left: none;
+}
+
+#reasons .reason p {
+    text-align: center;
+}
+
+#reasons .reason-value {
+    font-size: 2rem;
+}
+
+#reasons .reason-label {
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: #8f90a6;
+}
+
+#specialists {}
+
+#specialists .specialists-content {
+    display: flex;
+    justify-content: space-between;
+}
