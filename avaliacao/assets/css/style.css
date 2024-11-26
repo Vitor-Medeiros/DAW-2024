@@ -2,9 +2,12 @@
     margin: 0;
     padding: 0;
 }
-
+html {
+    scroll-behavior: smooth;
+}
 body {
     font-family: Roboto, sans-serif;
+    background-color: #b6cab6;
 }
 
 .container {
@@ -13,9 +16,11 @@ body {
 }
 
 header {
+    position: sticky;
+    top: 0;
     background-color:#133e13;
     padding: 1.25rem 1.25rem 0 1.25rem;
-    
+    z-index: 1000;
 }
 
 header .container {
@@ -89,7 +94,6 @@ main{}
 
 #banner {
     height: 550px;
-    border: 1px solid #fff;
     background-color: #000000;
     border-radius: 0.5rem;
     color: #cd830d;
@@ -104,7 +108,7 @@ main{}
     width: 80%;
     max-width: 650px;
     height: 100%;
-    background: linear-gradient(270deg,rgba(255,255,255,0), #ffffff 100%);
+    background: linear-gradient(270deg,rgba(255,255,255,0), #b6cab6 100%);
     padding: 2rem;
 }
 
@@ -218,6 +222,50 @@ section h2 {
     white-space:nowrap;
 }
 
+#specialists {}
+
+#specialists .specialists-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+#specialists .specialist {
+    width: 400px;
+    border: 1.5px solid #850000;
+    border-radius:8%;
+    padding: 1.5rem;
+    color: #cd830d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#specialists .specialist h4 {
+    font-weight: 400;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+#specialists .specialist img {
+    width: 200px;
+    height: 200px;
+    border-radius: 30%;
+    display: block;
+    margin-bottom: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+#specialists .specialist p {
+    font-weight: 400;
+    text-align: justify;
+    color: #8c978e;
+    max-height: 4.5rem;
+    overflow: hidden;
+    margin-bottom: 1.3rem;
+}
+
 #values {}
 
 #values .values-content {
@@ -261,8 +309,6 @@ section h2 {
 
 #values .values-detail .value p {
     margin: 0;
-    
-    
 }
 
 #values .values-content .value img {
@@ -275,7 +321,7 @@ footer {
     background-color: #133e13;
     color: #fff;
     margin-top: 2rem;
-    padding: 3rem 0;
+    padding: 2rem 0;
 }
 
 footer .footer-content {
@@ -285,7 +331,12 @@ footer .footer-content {
 
 footer .footer-content p {
     font-size: 1rem;
-    font-weight: 300;
+    font-weight: 400;
+    max-width: 300px;
+    text-align: justify;
+    line-height: 1.5rem;
+    padding-left: 0.5rem;
+    color: #cd830d;
 }
 
 footer .footer-content .footer-brand {
@@ -293,45 +344,69 @@ footer .footer-content .footer-brand {
     background-repeat: no-repeat;
     background-position-y: center;
     background-size: 2rem;
-    padding-left: 2rem;
+    padding-left:2rem;
     line-height: 2rem;
     font-size: 1.5rem;
-    font-weight: 300;
+    font-weight: 500;
     margin-bottom: 1rem;
 }
 
 footer .footer-menu {
-    font-size: 1rem;
+    font-size: 400;
     font-weight: 300;
+    color: #cd830d;
 }
 
-footer .footer-menu-title {
+footer .footer-menu .footer-menu-title {
     font-size: 1rem;
-    font-weight: 300;
+    font-weight: 500;    ;
 }
+
+footer .footer-menu .footer-topo {
+text-decoration: underline;
+}
+
+footer .footer-menu .footer-topo button {
+    background-color:transparent;
+    border: none;
+}
+
+footer .footer-menu .footer-topo img{
+    width: 50px;
+    height: 50px;
+    margin: 6rem 0 0 0;
+}
+
+
 
 footer .footer-menu ul {
     list-style: none;
-    margin-top: 1rem;
+    margin-top: 0.5rem;
+    
+
 }
 
 footer .footer-menu ul li {
     margin-bottom: 0.5rem;
+    padding: 0 0.5rem;    
 }
 
+
+
 footer .footer-menu ul li a {
-    text-decoration: underline;
     color: #cd830d;
+    text-decoration: none;
 }
 
 footer .footer-menu ul li a:hover {
     text-decoration: underline;
 }
 
+
 footer .footer-social {
     display: flex;
     justify-content: center;
-    padding-top: 3rem;
+    padding-top: 1.5rem;
     gap: 1rem;
 }
 
@@ -360,6 +435,7 @@ footer .footer-social .iFood {
 footer .footer-copyright {
     text-align: center;
     margin-top: 1.5rem;
-    font-size: 0.8rem;
+    font-size: 1rem;
     font-weight: 300;
+
 }

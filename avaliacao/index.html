@@ -4,11 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lolzinho Lanches</title>
+    <title>League of Lanches</title>
 
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="stylesheet" href="./assets/css/normalize.css" />
+    <script src="./assets/js/script.js" defer></script>
 
 </head>
 
@@ -23,15 +24,15 @@
 
             <div class="brand">
                 <img src="./assets/img/logo.png" alt="logo da empresa" />
-                <h1>Lolzinho Lanches</h1>
+                <h1>League of Lanches</h1>
             </div>
 
             <nav>
                 <ul>
                     <li><a href="#" class="active">INICIO</a></li>
-                    <li><a href="#">A EMPRESA</a></li>
-                    <li><a href="#">CARDÁPIO</a></li>
-                    <li><a href="#">CONTATO</a></li>
+                    <li><a href="#values">A EMPRESA</a></li>
+                    <li><a href="#cards2">CARDÁPIO</a></li>
+                    <li><a href="#footer">CONTATO</a></li>
                     <li><button>PEÇA JÁ!</button></li>
                 </ul>
             </nav>
@@ -47,7 +48,7 @@
                 <div class="banner-content">
 
                     <h3 class="banner-body1">
-                        A maior e melhor lanchonete da região
+                        A maior e melhor lanchonete da região!
                     </h3>
 
                 </div>
@@ -86,7 +87,7 @@
                     <div class="card">
                         <img src="./assets/img/combo3.jpg" />
                         <div class="card-content">
-                            <h4>Combo ivern</h4>
+                            <h4>Combo Ivern</h4>
                             <p> Um delicioso hamburguer vegetariano feito de soja e algumas ervas duvidosas e molho
                                 especial, e acompanhado vem nossas batatas fritas da casa</p>
                             <div class="card-price">
@@ -94,6 +95,20 @@
                             </div>
                         </div>
                     </div>
+
+                    <div class="card">
+                        <img src="./assets/img/lanche3.jpg" />
+                        <div class="card-content">
+                            <h4>Combo Flex</h4>
+                            <p> Cinco Hambúrguers suculento de carne angus, queijo provolone derretido, picles, alface
+                                crocante e molho mostarda e mel no pão artesanal.</p>
+                            <div class="card-price">
+                                <p>R$ 99,50</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
             </section>
 
             <section id="cards2">
@@ -106,7 +121,8 @@
                         <img src="./assets/img/lanche1.jpg" />
                         <div class="card-content">
                             <h4>Clássico do Chef</h4>
-                            <p> Um hambúrguer tradicional, com carne suculenta, queijo derretido, alface fresca, tomate, cebola roxa e maionese especial no pão brioche. </p>
+                            <p> Um hambúrguer tradicional, com carne suculenta, queijo derretido, alface fresca, tomate,
+                                cebola roxa e maionese especial no pão brioche. </p>
                             <div class="card-price">
                                 <p>R$ 45,00</p>
                             </div>
@@ -117,7 +133,8 @@
                         <img src="./assets/img/lanche2.jpg" />
                         <div class="card-content">
                             <h4>Explosão Hex-Tex</h4>
-                            <p> Hambúrguer picante com carne temperada, queijo cheddar, guacamole, jalapeños, alface americana e molho barbecue.</p>
+                            <p> Hambúrguer picante com carne temperada, queijo cheddar, guacamole, jalapeños, alface
+                                americana e molho barbecue.</p>
                             <div class="card-price">
                                 <p>R$ 38,99</p>
                             </div>
@@ -128,105 +145,151 @@
                         <img src="./assets/img/lanche3.jpg" />
                         <div class="card-content">
                             <h4>Mestre do Grelhado</h4>
-                            <p> Hambúrguer suculento de carne angus, queijo provolone derretido, picles, alface crocante e molho mostarda e mel no pão artesanal.</p>
+                            <p> Hambúrguer suculento de carne angus, queijo provolone derretido, picles, alface crocante
+                                e molho mostarda e mel no pão artesanal.</p>
                             <div class="card-price">
                                 <p>R$ 34,50</p>
                             </div>
                         </div>
                     </div>
-                    
 
-                        <div class="card">
-                            <img src="./assets/img/lanche4.jpg" />
-                            <div class="card-content">
-                                <h4>Picanha Prime</h4>
-                                <p> Hambúrguer com carne de picanha, queijo cheddar, alface americana, tomate, cebola grelhada e maionese artesanal no pão brioche.</p>
-                                <div class="card-price">
-                                    <p>R$ 45,00</p>
-                                </div>
+
+                    <div class="card">
+                        <img src="./assets/img/lanche4.jpg" />
+                        <div class="card-content">
+                            <h4>Picanha Prime</h4>
+                            <p> Hambúrguer com carne de picanha, queijo cheddar, alface americana, tomate, cebola
+                                grelhada e maionese artesanal no pão brioche.</p>
+                            <div class="card-price">
+                                <p>R$ 45,00</p>
                             </div>
                         </div>
-
-                        <div class="card">
-                            <img src="./assets/img/lanche5.jpg" />
-                            <div class="card-content">
-                                <h4>Verde Gourmet</h4>
-                                <p> Hambúrguer vegetariano com um blend de grão-de-bico e quinoa, queijo brie, rúcula, tomates secos e molho pesto no pão integral.</p>
-                                <div class="card-price">
-                                    <p>R$ 38,99</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="card">
-                            <img src="./assets/img/lanche6.jpg" />
-                            <div class="card-content">
-                                <h4>Garden Fit</h4>
-                                <p> Um hambúrguer vegetariano com hambúrguer de lentilha, queijo minas, folhas de espinafre, tomate fresco e maionese de ervas no pão integral.</p>
-                                <div class="card-price">
-                                    <p>R$ 34,50</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="card">
-                            <img src="./assets/img/lanche7.jpg" />
-                            <div class="card-content">
-                                <h4>Fritas Tradicional</h4>
-                                <p> Batatas fritas douradas e crocantes, temperadas na medida certa com sal, perfeitas para acompanhar qualquer refeição ou saborear como petisco.</p>
-                                <div class="card-price">
-                                    <p>R$ 38,99</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="card">
-                            <img src="./assets/img/lanche8.jpg" />
-                            <div class="card-content">
-                                <h4>Fritas com Bacon</h4>
-                                <p> Batatas fritas crocantes, cobertas com pedaços generosos de bacon dourado e um toque de queijo derretido, perfeitas para compartilhar ou saborear sozinho.</p>
-                                <div class="card-price">
-                                    <p>R$ 38,99</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="card">
-                            <img src="./assets/img/lanche9.jpg" />
-                            <div class="card-content">
-                                <h4>Onius</h4>
-                                <p> Anéis de cebola empanados e fritos até ficarem dourados e crocantes, com um sabor irresistível e perfeito para mergulhar em molhos deliciosos.</p>
-                                <div class="card-price">
-                                    <p>R$ 38,99</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="card">
-                            <img src="./assets/img/lanche10.jpg" />
-                            <div class="card-content">
-                                <h4>Bolinhos de Queijo</h4>
-                                <p> Porção de bolinhas douradas, recheadas com queijo cremoso e derretido, com uma casquinha crocante que derrete na boca.</p>
-                                <div class="card-price">
-                                    <p>R$ 38,99</p>
-                                </div>
-                            </div>
-                        </div>
-
                     </div>
+
+                    <div class="card">
+                        <img src="./assets/img/lanche5.jpg" />
+                        <div class="card-content">
+                            <h4>Verde Gourmet</h4>
+                            <p> Hambúrguer vegetariano com um blend de grão-de-bico e quinoa, queijo brie, rúcula,
+                                tomates secos e molho pesto no pão integral.</p>
+                            <div class="card-price">
+                                <p>R$ 38,99</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="./assets/img/lanche6.jpg" />
+                        <div class="card-content">
+                            <h4>Garden Fit</h4>
+                            <p> Um hambúrguer vegetariano com hambúrguer de lentilha, queijo minas, folhas de espinafre,
+                                tomate fresco e maionese de ervas no pão integral.</p>
+                            <div class="card-price">
+                                <p>R$ 34,50</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="./assets/img/lanche7.jpg" />
+                        <div class="card-content">
+                            <h4>Fritas Tradicional</h4>
+                            <p> Batatas fritas douradas e crocantes, temperadas na medida certa com sal, perfeitas para
+                                acompanhar qualquer refeição ou saborear como petisco.</p>
+                            <div class="card-price">
+                                <p>R$ 38,99</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="./assets/img/lanche8.jpg" />
+                        <div class="card-content">
+                            <h4>Fritas com Bacon</h4>
+                            <p> Batatas fritas crocantes, cobertas com pedaços generosos de bacon dourado e um toque de
+                                queijo derretido, perfeitas para compartilhar ou saborear sozinho.</p>
+                            <div class="card-price">
+                                <p>R$ 38,99</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="./assets/img/lanche9.jpg" />
+                        <div class="card-content">
+                            <h4>Onius</h4>
+                            <p> Anéis de cebola empanados e fritos até ficarem dourados e crocantes, com um sabor
+                                irresistível e perfeito para mergulhar em molhos deliciosos.</p>
+                            <div class="card-price">
+                                <p>R$ 38,99</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="./assets/img/lanche10.jpg" />
+                        <div class="card-content">
+                            <h4>Bolinhos de Queijo</h4>
+                            <p> Porção de bolinhas douradas, recheadas com queijo cremoso e derretido, com uma casquinha
+                                crocante que derrete na boca.</p>
+                            <div class="card-price">
+                                <p>R$ 38,99</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <section id="specialists">
+                <h2>Conheça nossos Especialistas</h2>
+
+                <div class="specialists-content">
+                    <div class="specialist">
+                        <h4>Faker</h4>
+                        <img src="./assets/img/faker.png" alt="Faker">
+                        <p>Gangseo-gu</p>
+                        <p class="specialist-detail">
+                            Quando se trata de dominar a arte da cozinha, Faker, o chef prodígio, está em um nível que
+                            poucos conseguem alcançar. Assim como no Rift, ele transforma ingredientes simples em
+                            verdadeiras obras-primas gastronômicas, com precisão, criatividade e um toque de
+                            genialidade.
+                        </p>
+                    </div>
+
+                    <div class="specialist">
+                        <h4>Keria</h4>
+                        <img src="./assets/img/keria.png" alt="Keria">
+                        <p>Seul</p>
+                        <p class="specialist-detail">
+                            Keria é o chef que todo mundo quer no time. Conhecido por sua habilidade em transformar
+                            pratos simples em experiências memoráveis, ele é o verdadeiro suporte dos sabores, sempre
+                            pronto para elevar qualquer receita ao próximo nível.
+                        </p>
+                    </div>
+
+                </div>
+
+
+
             </section>
 
             <section id="values">
-                <h2>Quem é a Lolzinho Lanches?</h2>
+                <h2>Quem é a League of Lanches?</h2>
                 <div class="values-content">
                     <img src="./assets/img/descricao.jpg" alt="Lanchonete">
-                        
+
                     <div class="values-text">
                         <p>
-                        No Lolzinho Lanches, acreditamos que bons momentos começam com uma boa comida. Somos apaixonados por oferecer lanches de qualidade, preparados com ingredientes frescos e muito carinho. Nossa missão é proporcionar uma experiência única, seja com nossos hambúrgueres suculentos, porções irresistíveis ou aquele lanche perfeito para compartilhar com os amigos.
+                            No League of Lanches, acreditamos que bons momentos começam com uma boa comida. Somos
+                            apaixonados por oferecer lanches de qualidade, preparados com ingredientes frescos e muito
+                            carinho. Nossa missão é proporcionar uma experiência única, seja com nossos hambúrgueres
+                            suculentos, porções irresistíveis ou aquele lanche perfeito para compartilhar com os amigos.
                         </p>
                         <p>
-                            Aqui, o sabor é levado a sério, mas a diversão também tem espaço garantido. No Lolzinho Lanches, cada mordida é uma vitória! Seja bem-vindo ao nosso time, onde comer bem é sempre o MVP do dia.
+                            Aqui, o sabor é levado a sério, mas a diversão também tem espaço garantido. No League of
+                            Lanches, cada mordida é uma vitória! Seja bem-vindo ao nosso time, onde comer bem é sempre o
+                            MVP do dia.
                         </p>
 
                         <div class="values-detail">
@@ -245,7 +308,7 @@
                         </div>
 
                     </div>
-                    
+
                 </div>
 
             </section>
@@ -254,49 +317,63 @@
     </main>
 
     <footer>
-        <div class="container">
+        <section id="footer">
+            <div class="container">
 
-            <div class="footer-content">
+                <div class="footer-content">
 
-                <div class="footer-company">
-                    <p class="footer-brand">
-                        Lolzinho Lanches
-                    </p>
-                    <p>Os melhores lanches da cidade, com uma variedade de sabores incríveis para todos os gostos.</p>
+                    <div class="footer-company">
+                        <p class="footer-brand">
+                            League of Lanches
+                        </p>
+                        <p>Os melhores lanches da cidade, com uma variedade de sabores incríveis para todos os gostos.
+                        </p>
+                    </div>
+
+                    <div class="footer-menu">
+                        <p class="footer-menu-title">Nossa empresa</p>
+                        <ul>
+                            <li><a href="#values">Sobre Nós</a></li>
+                            <li><a href="#specialists">Especialistas</a></li>
+                            <li><a href="#">Missão e Visão</a></li>
+                            <li><a href="#values">Nosso Valores</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-menu">
+                        <p class="footer-menu-title">Contatos</p>
+                        <ul>
+                            <li>+66 9 7777-0100 </li>
+                            <li> Rua Mid Lane,010</li>
+                            <li>Ionia - Runeterra
+                            <li>
+                        </ul>
+                    </div>
+                    <div class="footer-menu">
+                        <div class="footer-topo">
+                            <ul>
+                                <li><a href="#"><button><img src="./assets/img/seta.png" alt="topo"></button></a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+
                 </div>
 
-                <div class="footer-menu">
-                    <p class="footer-menu-title">Nossa empresa</p>
-                    <ul>
-                        <li><a href="values">Sobre Nós</a></li>
-                        <!-- <li><a href="specialists">Especialistas</a></li> -->
-                        <!-- <li><a href="#">Missão e Visão</a></li> -->
-                        <li><a href="values">Nosso Valores</a></li>
-                    </ul>
+                <div class="footer-social">
+                    <span class="facebook"></span>
+                    <span class="twitter"></span>
+                    <span class="instagram"></span>
+                    <span class="iFood"></span>
                 </div>
 
-                <div class="footer-menu">
-                    <p class="footer-menu-title">Contatos</p>
-                    <ul>
-                        <li>+55 46 9 9999-9999</li>
-                        <li>Rua Mato Grosso,200</li>
-                        <li>Pato Branco - PR</li>
-                    </ul>
+                <div class="footer-copyright">
+                    <p>&#169; 2024 - Todos os direitos reservados</p>
                 </div>
-            </div>
 
-            <div class="footer-social">
-                <span class="facebook"></span>
-                <span class="twitter"></span>
-                <span class="instagram"></span>
-                <span class="iFood"></span>
             </div>
-
-            <div class="footer-copyright">
-                <p>&#169; 2024 - Todos os direitos reservados'</p>
-            </div>
-
-        </div>
+        </section>
     </footer>
 
 </body>
